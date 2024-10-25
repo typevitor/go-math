@@ -16,7 +16,7 @@ jobs:
       - uses: actions/setup-go@v5
         with:
           go-version: ${{ matrix.go }}
-      - run: go test
+      - run: go test -coverprofile=coverage.out
       - run: go run math.go
 
       - name: SonarCloud Scan
