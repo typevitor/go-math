@@ -14,7 +14,7 @@ func Sum(a int, b int) int {
 	return a + b
 }
 
-func Sub(a int, b int) int {
+/*func Sub(a int, b int) int {
 	return a - b
 }
 
@@ -32,4 +32,4 @@ func Div(a int, b int) (float32, error) {
 	}
 
 	return float32(a) / float32(b), nil
-}
+}*/
