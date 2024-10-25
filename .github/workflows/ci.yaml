@@ -19,11 +19,6 @@ jobs:
       - run: go test
       - run: go run math.go
 
-      - name: SonarCloud Scan
-        uses: SonarSource/sonarcloud-github-action@master
-        env:
-          SONAR_TOKEN: ${{ secrets.SONARCLOUD_TOKEN }}
-
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
       
