@@ -36,4 +36,4 @@ func TestDiv(t *testing.T) {
 	if err == nil {
 		t.Errorf("Divisor não pode ser nulo.");
 	}
-}
+ }

@@ -3,10 +3,11 @@ package main
 import (
 	"fmt"
 	"errors"
+	"math"
 )
 
 func main() {
-	fmt.Println(Sum(10,10))
+	fmt.Println(PowInt(2,5))
 }
 
 func Sum(a int, b int) int {
@@ -19,6 +20,10 @@ func Sub(a int, b int) int {
 
 func Times(a int, b int) int {
 	return a * b
+}
+
+func PowInt(a int, b int) int {
+	return int(math.Pow(float64(a), float64(b)))
 }
 
 func Div(a int, b int) (float32, error) {
