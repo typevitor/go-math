@@ -1,6 +1,9 @@
 name: ci-math-go
 
 on: 
+  push:
+    branches:
+    - develop
   pull_request:
     branches:
       - develop
